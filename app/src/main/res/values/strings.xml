@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Asserts Download</string>
+
+    <!-- Home Fragment Texts :- -->
+    <string name="username">Cut Art App</string>
+    <string name="appname">Print files available</string>
+    <string name="pro">Pro</string>
+    <string name="shape">Shapes</string>
+    <string name="cut_file">Cut File</string>
+    <string name="monogram">Monograms</string>
+    <string name="watercolor">Watercolor</string>
+    <string name="my_stuff">My Stuff</string>
+    <string name="basic">Basic</string>
+    <string name="plus">Plus</string>
+    <string name="detail">Recurring billing. Cancel anytime.</string>
+    <string name="subscribe">Subscribe Now</string>
+    <string name="gold">Gold</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="price">Rs 16,00</string>
+    <string name="price1">Rs 4,400</string>
+    <string name="price2">Rs 10,500</string>
+    <string name="unlimited">Unlimited Files</string>
+    <string name="download">Download</string>
+    <string name="view">View</string>
+    <string name="unlimited_png">Unlimited Files
+        With PNG</string>
+    <string name="terms">Terms And Uses</string>
+    <string name="mockup">Mockup View</string>
+    <string name="print">Print file look like</string>
+    <string name="detail1">After 3 days free trial subscription automatically cancel</string>
+
+</resources>

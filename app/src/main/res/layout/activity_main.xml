@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/preview_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/add_image" />
+
+    <RelativeLayout
+        android:id="@+id/layout_changer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation_menu">
+
+    </RelativeLayout>
+
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/botton_navigation_menu"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        android:translationZ="1000dp"
+        android:layout_above="@id/bottom_navigation_menu"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        app:srcCompat="@drawable/home_image" />-->
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sideMargins="50dp"
+        app:itemFontFamily="@font/poppins_light"
+        app:textSize="14sp"
+        app:duration="500"
+        android:textAlignment="center"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        app:itemPadding="15dp"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        app:backgroundColor="@color/green"
+        app:menu="@menu/botton_navigation_menu"/>
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".AssertsPreviewActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_pager_background"
+        android:layout_below="@+id/back">
+
+        <LinearLayout
+        android:id="@+id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textFontWeight="500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mockup" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_light"
+            android:textFontWeight="500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/print" />
+        
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pictures"
+            android:layout_below="@id/texts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp">
+
+        <FrameLayout
+            android:layout_below="@id/texts"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:background="@color/light_grey">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/shirt_image" />
+
+        </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_below="@id/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_grey">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/mug_image" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_below="@id/texts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_grey">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/demo_image" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preview_picture"
+            android:layout_below="@id/pictures"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/shirt_image" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button_design"
+            android:text="Back" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
